@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<manifest>
+    <project path="module7" name="module7.git"/>
+    <project path="module8" name="module8.git"/>
+    <project path="module9" name="module9.git"/>
+</manifest>

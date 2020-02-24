@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<manifest>
+    <include name="./test3.xml" />
+    <include name="./test4.xml" />
+    <!-- <remote
+        name="local"
+        fetch="ssh://git@134.175.163.52:/home/git"
+      />
+    <default
+        remote="local"
+        revision="master"
+        sync-j="4"
+     /> -->
+    <project path="module1" name="module1.git"/>
+    <project path="module2" name="module2.git"/>
+    <project path="module3" name="module3.git"/>
+</manifest>

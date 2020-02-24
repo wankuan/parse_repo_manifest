@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<manifest>
+    <remote
+        name="local"
+        fetch=".."
+        review = "ssh://git@134.175.163.52:/home/git"
+      />
+    <default
+        remote="local"
+        revision="master"
+        sync-j="4"
+     />
+    <project path="module4" name="module4.git"/>
+    <project path="module5" name="module5.git"/>
+    <project path="module6" name="module6.git"/>
+</manifest>
