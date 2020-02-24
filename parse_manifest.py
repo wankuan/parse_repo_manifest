@@ -30,6 +30,11 @@ class parse_manifetst:
         return self.remote_path
     def get_remote_name(self):
         return self.remote_name
+    def write_config(self, file_name):
+        with open(file_name, 'w') as file_object:
+            for git_name in self.git_name_list:
+                file_object.write("p=%s\n"%git_name)
+                file_object.write("b=%s\n\n"%self.branch_name)
     # Use recursive methods to parse xml
     def parse(self, xml_name):
         domTree = parse(xml_name)
@@ -92,6 +97,7 @@ if __name__ == "__main__":
     init_xml = "test2.xml"
     handler = parse_manifetst()
     handler.parse(init_xml)
+    handler.write_config("manifest.conf")
     print(handler.get_git_name_list())
     print(handler.get_git_localpath_list())
     print(handler.get_branch_name())
